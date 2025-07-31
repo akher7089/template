@@ -1,0 +1,128 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --goldcolor: hsl(31, 77%, 52%);
+  --cyancolor: hsl(184, 100%, 22%);
+  --greencolor: hsl(179, 100%, 13%);
+}
+body{
+  min-height: 100vh;
+}
+p {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Big Shoulders", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  font-size:30px;
+}
+
+html,
+section,
+body {
+  height: 100%;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card_wrapper{
+  display: flex;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgb(0,0,0,0.2);
+}
+img{
+  margin-top: 30px;
+  margin-left: 25px;
+  width: auto;
+  height: 30px;
+  float: left;
+}
+a {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 30px;
+  background-color: white;
+  color: inherit;
+  padding: 6px 12px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.slide a:hover {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+
+.first_slide {
+  width: 180px;
+  height: 310px;
+  background: var(--goldcolor);
+  border-radius: 15px 0 0 15px;
+}
+.first_slide a{
+  color: var(--goldcolor);
+}
+.first_slide h2,.seconde_slide h3, .third_slide h4 {
+  margin-top: 70px;
+  margin-left: 25px;
+  text-align: left;
+}
+.first_slide p,.seconde_slide p, .third_slide p{
+display: inline-block;
+text-align: left;
+margin-left: 25px;
+color: white;
+padding-top: 15px;
+}
+
+.seconde_slide {
+  width: 180px;
+  height: 310px;
+  background: var(--cyancolor);
+}
+.seconde_slide a{
+  color: var(--cyancolor);
+}
+
+.third_slide {
+  width: 180px;
+  height: 310px;
+  background: var(--greencolor);
+  border-radius: 0px 15px 15px 0px;
+}
+.third_slide a{
+  color: var(--greencolor);
+}
