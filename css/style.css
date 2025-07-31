@@ -79,11 +79,6 @@ a:hover {
   border: 2px solid white;
 }
 
-.slide a:hover {
-  background-color: transparent;
-  color: white;
-  border: 2px solid white;
-}
 
 
 .first_slide {
